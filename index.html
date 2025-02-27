@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Consumo Energético</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulação de Consumo Energético</h1>
+        <form method="POST">
+            <input type="text" id="nome" name="nome" placeholder="Nome do Eletrodoméstico" required>
+            <input type="number" id="potencia" name="potencia" placeholder="Potência (W)" required>
+            <select id="unidade" name="unidade" required>
+                <option value="h">Horas</option>
+                <option value="m">Minutos</option>
+            </select>
+            <input type="number" id="tempo" name="tempo" placeholder="Tempo de uso por dia" required>
+            <button type="submit">Calcular</button>
+        </form>
+
+        <span>{% if consumo_mensal is not none %}
+        </span>
+
+            <div class="resultados">
+                <h2>Resultados:</h2>
+                <p><strong>Consumo Mensal:</strong> {{ consumo_mensal }} kWh</p>
+                <p><strong>Custo Mensal:</strong> R$ {{ custo_mensal }}</p>
+                <p>{{ sugestao }}</p>
+            </div>
+
+        <span>{% endif %}</span>
+    </div>
+</body>
+</html>

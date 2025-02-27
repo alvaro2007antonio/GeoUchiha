@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container{
+    background-image: linear-gradient(to right, rgb(180, 113, 47), rgb(45, 30, 7));
+    padding: 20px;
+    max-width: 400px;
+    height: 700px;
+    margin: auto;
+    box-shadow: 10px 10px 10px (0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.container h1{
+    color: #f4f4f4;
+}
+
+input, button {
+    width: 90%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+button {
+    background-color: #ccc;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #8e8888;
+}
+
+.resultados {
+    margin-top: 20px;
+    background: rgb(53, 88, 63);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    height: 200px;
+    font-size: 15px;
+    text-align: start;
+    box-shadow: 0px 0px 5px rgb(128, 122, 122);
+}
+
+span{
+    display: none;
+}
+
+.resultados h2{
+    text-align: center;
+}
+
+select{
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 80px;
+    max-width: 100%;
+}
